@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=gps
+Comment=Python Program
+Exec=sudo -H -u pi /home/pi/miniconda3/bin/python /home/pi/gps.py &

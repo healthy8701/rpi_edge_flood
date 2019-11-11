@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=stock
+Comment=Python Program
+Exec=sudo -H -u pi /home/pi/miniconda3/bin/python /home/pi/socket_client.py &
