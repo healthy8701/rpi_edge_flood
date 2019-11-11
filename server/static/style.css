@@ -1,0 +1,24 @@
+.button{
+  background:#ccc;
+  padding:10px;
+  color:#000;
+  display: inline-block;
+}
+.bar-block{
+  margin-bottom:20px;
+}
+
+
+.red{
+	background: red!important;
+	color:#fff!important;
+}
+
+.h1 {font-size: 12px;color: #FFF; display : inline}
+.h2 {font-size: 12px;color: #FFF; display : inline}
+
+img{
+  width: 75vw;  
+}
+
+  

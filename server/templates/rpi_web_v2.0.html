@@ -1,0 +1,136 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.2, maximum-scale=2.0" />		
+		<title>RPI-STREAM</title>
+		<link rel="stylesheet" href="static/style.css">	
+
+	</head>
+	
+	<body>		
+		<div class="bar-block">	
+		<a href="javascript:void(0)" class="bar-item button tablink testbtn" onclick="openClass(event, 'class1')">Station1</a>
+		<a href="javascript:void(0)" class="bar-item button tablink" onclick="openClass(event, 'class2')">Station2</a>
+		<a href="javascript:void(0)" class="bar-item button tablink" onclick="openClass(event, 'class3')">Station3</a>
+		<a href="javascript:void(0)" class="bar-item button tablink" onclick="openClass(event, 'class4')">Station4</a>
+		<a href="javascript:void(0)" class="bar-item button tablink" onclick="openClass(event, 'class5')">Station5</a>
+		<a href="javascript:void(0)" class="bar-item button tablink" onclick="openClass(event, 'class6')">Station6</a>
+		<a href="javascript:void(0)" class="bar-item button tablink" onclick="openClass(event, 'class7')">ALL Station</a>
+		<a href="javascript:void(0)" class="bar-item button tablink" onclick="openClass(event, 'class8')" style="VISIBILITY: hidden" >TEST</a>				
+		</div>
+
+		
+		<div id="class1" class="container class">
+		<table >
+			<h1  style="display: inline;">ID:{{device[0].name}}&nbsp;&nbsp;</h1>
+			<nobr id="clock_{{device[0].id}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</nobr>		
+			&nbsp;&nbsp;<button onclick="shutdown({{device[0].id}})">關機</button>
+			<div id="connect_{{device[0].id}}">連線狀態:離線中</div>
+			<div id="coordinate_{{device[0].id}}">目前位置:</div>	
+			<tr><td>Source:<a href={{device[0].source}}>{{device[0].source}}</a></td></tr>
+			<tr><td><img src={{device[0].source}} width="640"/></td></tr>
+		</table >
+		</div>
+		
+		<div id="class2" class="container class">
+		<table >
+			<h1  style="display: inline;">ID:{{device[1].name}}&nbsp;&nbsp;</h1>
+			<nobr id="clock_{{device[1].id}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</nobr>		
+			&nbsp;&nbsp;<button onclick="shutdown({{device[1].id}})">關機</button>
+			<div id="connect_{{device[1].id}}">連線狀態:離線中</div>
+			<div id="coordinate_{{device[1].id}}">目前位置:</div>	
+			<tr><td>Source:<a href={{device[1].source}}>{{device[1].source}}</a></td></tr>
+			<tr><td><img src={{device[1].source}} width="640" /></td></tr>
+		</table >			
+		</div>
+
+		<div id="class3" class="container class">
+		<table >
+			<h1  style="display: inline;">ID:{{device[2].name}}&nbsp;&nbsp;</h1>
+			<nobr id="clock_{{device[2].id}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</nobr>		
+			&nbsp;&nbsp;<button onclick="shutdown({{device[2].id}})">關機</button>
+			<div id="connect_{{device[2].id}}">連線狀態:離線中</div>
+			<div id="coordinate_{{device[2].id}}">目前位置:</div>	
+			<tr><td>Source:<a href={{device[2].source}}>{{device[2].source}}</a></td></tr>
+			<tr><td><img src={{device[2].source}} width="640" /></td></tr>
+		</table >	
+		</div>
+		
+		<div id="class4" class="container class">
+		<table >
+			<h1  style="display: inline;">ID:{{device[3].name}}&nbsp;&nbsp;</h1>
+			<nobr id="clock_{{device[3].id}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</nobr>		
+			&nbsp;&nbsp;<button onclick="shutdown({{device[3].id}})">關機</button>
+			<div id="connect_{{device[3].id}}">連線狀態:離線中</div>
+			<div id="coordinate_{{device[3].id}}">目前位置:</div>	
+			<tr><td>Source:<a href={{device[3].source}}>{{device[3].source}}</a></td></tr>
+			<tr><td><img src={{device[3].source}} width="640" /></td></tr>
+		</table >	
+		</div>
+		
+		<div id="class5" class="container class">
+		<table >
+			<h1  style="display: inline;">ID:{{device[4].name}}&nbsp;&nbsp;</h1>
+			<nobr id="clock_{{device[4].id}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</nobr>		
+			&nbsp;&nbsp;<button onclick="shutdown({{device[4].id}})">關機</button>
+			<div id="connect_{{device[4].id}}">連線狀態:離線中</div>
+			<div id="coordinate_{{device[4].id}}">目前位置:</div>	
+			<tr><td>Source:<a href={{device[4].source}}>{{device[4].source}}</a></td></tr>
+			<tr><td><img src={{device[4].source}} width="640" /></td></tr>
+		</table >	
+		</div>
+		
+		<div id="class6" class="container class">				
+			<h1  style="display: inline;">ID:{{device[5].name}}&nbsp;&nbsp;</h1>	
+			<nobr id="clock_{{device[5].id}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</nobr>				
+			&nbsp;&nbsp;<button onclick="shutdown({{device[5].id}})">關機</button>
+			<div id="connect_{{device[5].id}}">連線狀態:離線中</div>
+			<div id="coordinate_{{device[5].id}}">目前位置:</div>		
+			<div>Source:<a href={{device[5].source}}>{{device[5].source}}</a></div>
+			<br><div><img src={{device[5].source}} width="640" /></div>		
+		</div>
+		
+		<div id="class7" class="container class">
+		<table >	
+			<tr>
+				<td>ID:{{device[0].name}}</td>
+				<td>ID:{{device[1].name}}</td>
+				<td>ID:{{device[2].name}}</td>	
+			</tr>
+			
+			<tr>
+				<td><img src={{device[0].source}}  width="640" height="360" /></td>
+				<td><img src={{device[1].source}}  width="640" height="360" /></td>
+				<td><img src={{device[2].source}}  width="640" height="360" /></td>
+			</tr>
+			
+			<tr>			
+				<td>ID:{{device[3].name}}</td>
+				<td>ID:{{device[4].name}}</td>
+				<td>ID:{{device[5].name}}</td>					
+			</tr>
+			
+			<tr>	
+				<td><img src={{device[3].source}}  width="640" height="360" /></td>
+				<td><img src={{device[4].source}}  width="640" height="360" /></td>
+				<td><img src={{device[5].source}}  width="640" height="360" /></td>			
+			</tr>
+		
+			
+		</table>
+		</div>
+		
+		
+		<div id="class8" class="container class">
+		<table >
+			<tr><td>ID:{{device[-1].name}}</td></tr>
+			<tr><td>Source:<a href={{device[-1].source}}>{{device[-1].source}}</a></td></tr>
+			<tr><td><img src={{device[-1].source}}  width="640" height="360" /></td></tr>
+		</table >	
+		</div>
+		
+		<script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//cdn.bootcss.com/socket.io/1.5.1/socket.io.min.js"></script>
+		<script src="static/connect.js"></script>
+
+	</body>
+</html>
