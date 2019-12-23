@@ -6,4 +6,6 @@
 
     $git clone https://drive.narlabs.org.tw/navigate/s/0C13973B723C45F2BED82D7562A6AD21GUY
     
-2. 安裝系統映像檔
+2. 安裝系統映像檔，詳細安裝說明請參考
+   
+    https://sites.google.com/site/raspberypishare0918/home/di-yi-ci-qi-dong
