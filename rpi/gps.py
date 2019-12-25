@@ -55,8 +55,8 @@ if __name__ == '__main__':
     
     station_no = os.uname()[1][-1]
     station_id = 'thb00'+str(station_no)+'_'
-    ftp_ip_1 = '140.110.27.122'
-    ftp_ip_2 = '140.110.17.176'
+    ftp_ip_1 = ''
+    ftp_ip_2 = ''
     rpi_ip = '192.168.1.24'+str(station_no)
     dir_name_1 = 'station'+str(station_no)
     dir_name_2 = 'station'+str(station_no)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
             else:      
                 print(str(gps[0])+','+str(gps[1]))  
                 f.write(str(gps[0])+' '+str(gps[1]))
-                upload(file_name,file_name,ftp_ip_2,'wraflood','wra@nchc',dir_name_2)  
+                upload(file_name,file_name,ftp_ip_2,'','',dir_name_2)  
             f.close()   
             time.sleep(30)
  
