@@ -56,8 +56,8 @@ def cap(localtime,station_id,ftp_ip_1,ftp_ip_2,dir_name_1,dir_name_2):
     print(file_name) 
     cv2.imwrite(path,frame)    
     photo_mame = file_name+'.jpg'
-    upload(path,photo_mame,ftp_ip_1,'tbh','picv0624',dir_name_1)
-    upload(path,photo_mame,ftp_ip_2,'wraflood','wra@nchc',dir_name_2)  
+    upload(path,photo_mame,ftp_ip_1,'','',dir_name_1)
+    upload(path,photo_mame,ftp_ip_2,'','',dir_name_2)  
   
     cap.release()
 
@@ -77,8 +77,8 @@ def start():
 if __name__ == '__main__':	 
     station_no = int(os.uname()[1][-3:])
     station_id = 'thb00'+str(station_no)+'_'
-    ftp_ip_1 = '140.110.27.122'
-    ftp_ip_2 = '140.110.17.176'
+    ftp_ip_1 = ''
+    ftp_ip_2 = ''
     dir_name_1 = 'station'+str(station_no)+'/input'
     dir_name_2 = 'station'+str(station_no)+'/input'    
     
