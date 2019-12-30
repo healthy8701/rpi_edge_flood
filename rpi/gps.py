@@ -57,7 +57,6 @@ if __name__ == '__main__':
     station_id = 'thb00'+str(station_no)+'_'
     ftp_ip_1 = ''
     ftp_ip_2 = ''
-    rpi_ip = '192.168.1.24'+str(station_no)
     dir_name_1 = 'station'+str(station_no)
     dir_name_2 = 'station'+str(station_no)
     
