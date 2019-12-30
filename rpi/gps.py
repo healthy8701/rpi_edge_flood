@@ -90,6 +90,7 @@ if __name__ == '__main__':
             else:      
                 print(str(gps[0])+','+str(gps[1]))  
                 f.write(str(gps[0])+' '+str(gps[1]))
+				upload(file_name,file_name,ftp_ip_1,'','',dir_name_1)
                 upload(file_name,file_name,ftp_ip_2,'','',dir_name_2)  
             f.close()   
             time.sleep(30)
