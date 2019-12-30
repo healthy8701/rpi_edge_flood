@@ -1,6 +1,12 @@
 # rpi_edge_flood
 利用樹梅派建立邊緣裝置用於淹水監控
 
+# 所需硬體設備
+- [x] Raspberry Pi 3+
+- [x] 8MP Raspberry Pi Camera Module(v2)
+- [x] Sixfab 4G/LTE Shield
+- [x] Quectel EC25 Mini PCle 4G/LTE Module
+
 # 安裝樹莓派作業系統
 1. 下載系統映像檔，執行下列指令
    
