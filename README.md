@@ -23,8 +23,10 @@
    4. VPN連線設定，設定VPN帳號、密碼、IP，執行下列指令進行更改
 
     $sudo nano /etc/ppp/peers/picv
-       
-   5.
+
+![demo](https://github.com/healthy8701/rpi_edge_flood/blob/master/img/vpn.JPG?raw=true)
+
+   5. 設定完成，重新開機即完成VPN設置
 
 # 移動站後台架設
 
