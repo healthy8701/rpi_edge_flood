@@ -44,7 +44,7 @@ if __name__ == '__main__':
                 msg = temp[0]
                 conn.send(msg.encode('utf-8'))
                 call('sudo shutdown -h now', shell=True)   
-                
+                 
         except ConnectionResetError as e:
             print('關閉了正在佔線的鏈接！')
             break
