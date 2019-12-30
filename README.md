@@ -39,3 +39,21 @@
 
    5. 設定完成，重新開機即完成VPN設置
 
+## GPS設定
+   1. 設定GPS抓取座標後，上傳到指定的FTP伺服器
+   2. 編輯rpi/gps.py
+   3. 找到以下這段程式碼，並設定以下變數，目前上傳至2個FTP伺服器，可視情況更改要上傳的FTP數量
+      * ftp_ip_1和ftp_ip_2為FTP伺服器IP
+      * station_no為臨時站編號(系統自動抓取無須設定)
+      * station_id為臨時站ID(系統自動抓取無須設定)
+      * dir_name_1和dir_name_2為FTP資料夾名稱   
+   
+![demo](https://raw.githubusercontent.com/healthy8701/rpi_edge_flood/master/img/gps1.JPG)
+
+   4. 找到以下這段程式碼，設定upload()函式，參數依序為影像路徑、影像檔名、FTP IP、FTP帳號、FTP密碼、FTP資料夾
+   
+![demo](https://raw.githubusercontent.com/healthy8701/rpi_edge_flood/master/img/gps2.JPG)
+
+  
+   
+
