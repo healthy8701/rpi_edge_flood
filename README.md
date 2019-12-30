@@ -69,10 +69,10 @@
       
    ![demo](https://raw.githubusercontent.com/healthy8701/rpi_edge_flood/master/img/img1.JPG)
    
-    4. 找到以下這段程式碼，設定upload()函式，參數依序為影像路徑、影像檔名、FTP IP、FTP帳號、FTP密碼、FTP資料夾
+   4. 找到以下這段程式碼，設定upload()函式，參數依序為影像路徑、影像檔名、FTP IP、FTP帳號、FTP密碼、FTP資料夾
     
    ![demo](https://raw.githubusercontent.com/healthy8701/rpi_edge_flood/master/img/img2.JPG)
    
-    5. 儲存程式碼並複製到樹莓派中的以下路徑中取代
+   5. 儲存程式碼並複製到樹莓派中的以下路徑中取代
    
     /home/pi
